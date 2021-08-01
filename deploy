@@ -1,0 +1,3 @@
+#!/bin/sh
+hugo && rsync -avz --delete public/ root@complex2math.com:/var/www/complex2math
+

@@ -1,0 +1,16 @@
+baseURL: "https://complex2math.com"
+languageCode: "en-us"
+title: "Homepage of Complex2-Liu"
+
+taxonomies:
+  tag: tags
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    style: igor
+    lineNumbersInTable: true
+    linenos: false
+

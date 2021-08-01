@@ -1,0 +1,149 @@
+/* Counter */
+body {
+  counter-reset: theorem;
+  counter-reset: definition;
+  counter-reset: problem;
+  counter-reset: example;
+}
+
+/* Theorem */
+.thm {
+  counter-increment: theorem;
+  display: block;
+  margin: 8px 0;
+  font-style: italic;
+}
+.thm::before {
+  content: 'Theorem ' counter(theorem) '. ';
+  font-family: "Computer Modern Sans";
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Lemma */
+.lem {
+  counter-increment: theorem;
+  display: block;
+  margin: 8px 0;
+  font-style: italic;
+}
+.lem::before {
+  content: 'Lemma ' counter(theorem) '. ';
+  font-family: "Computer Modern Sans";
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Proposition */
+.prop {
+  counter-increment: theorem;
+  display: block;
+  margin: 8px 0;
+  font-style: italic;
+}
+.prop::before {
+  content: 'Proposition ' counter(theorem) '. ';
+  font-family: "Computer Modern Sans";
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Corollary */
+.cor {
+  counter-increment: theorem;
+  display: block;
+  margin: 8px 0;
+  font-style: italic;
+}
+.cor::before {
+  content: 'Corollary ' counter(theorem) '. ';
+  font-family: "Computer Modern Sans";
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Problem */
+.prob {
+  counter-increment: problem;
+  display: block;
+  margin: 8px 0;
+  font-style: normal;
+}
+.prob::before {
+  content: 'Problem ' counter(problem) '. ';
+  font-family: "Computer Modern Sans";
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Example */
+.exmp {
+  counter-increment: example;
+  display: block;
+  margin: 8px 0;
+  font-style: normal;
+}
+.exmp::before {
+  content: 'Example ' counter(example) '. ';
+  font-weight: bold;
+  font-family: "Computer Modern Sans";
+  font-style: normal;
+}
+
+/* Definition */
+.definition {
+  counter-increment: definition;
+  display: block;
+  margin: 8px 0;
+  font-style: normal;
+}
+.definition::before {
+  content: 'Definition ' counter(definition) '. ';
+  font-family: "Computer Modern Sans";
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Remark */
+.rem {
+  display: block;
+  margin: 8px 0;
+  font-style: normal;
+}
+.rem::before {
+  content: 'Remark. ';
+  font-family: "Computer Modern Sans";
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Proof */
+.proof {
+  display: block;
+  margin: 8px 0;
+  font-style: normal;
+  position: relative;
+}
+.proof::before {
+  content: 'Proof. ' attr(title);
+  font-style: italic;
+}
+.proof:after {
+  font-size: 20px;
+  content: '\25A1';
+  position: absolute;
+  right: -0px;
+  bottom: -3px;
+}
+
+/* Solution */
+.soln {
+  display: block;
+  margin: 8px 0;
+  font-style: normal;
+  position: relative;
+}
+.soln::before {
+  content: 'Solution. ' attr(title);
+  font-style: italic;
+}

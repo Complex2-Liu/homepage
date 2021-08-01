@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+{{ partial "head.html" . }}
+
+<body>
+
+{{ partial "header-block.html" . }}
+
+{{ partial "menu-block.html" . }}
+
+<div id="main-block">
+  {{ block "main" . }}
+  {{ end }}
+</div>
+
+</body>
+
+<footer style="width: 100%;">
+{{ partial "footer.html" . }}
+</footer>
+
+</html>

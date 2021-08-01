@@ -1,0 +1,48 @@
+<div id="menu-block">
+
+  <div id="menu-top"> 
+    <h3 style="width: 110px; ">
+    <img src="/icons/menu.svg" style="vertical-align:top;">
+    Menu
+    </h3>
+
+    <h3>
+    <a href="javascript: divShow();" id="menu-click"><img src="/icons/plus.svg" style="height: 24px; vertical-align: top;"></a>
+    </h3>
+  </div>
+
+  <div id="menu-collapse">
+  {{ $currentPage := . }}
+  {{ $url := $currentPage.RelPermalink }}
+
+  <h5 {{ if $currentPage.IsHome }}class="isactive"{{ end }}>
+    <img src="/icons/home.svg" class="menu-pre-icon">
+    <a href="{{ .Site.BaseURL }}">Home</a>
+  </h5>
+  <ul>
+    <li><h6 {{ if eq $url "/links/" }}class="isactive"{{ end }}><a href="/links/">Links</a></h6></li>
+    <li><h6><a href="/blog/07/hello-world/">Hello World</a></h6></li>
+  </ul>
+
+  {{ $blogSection := .Site.GetPage "/blog/" }}
+  <h5 {{ if .InSection $blogSection }}class="isactive"{{ end }}>
+    <img src="/icons/writing.svg" class="menu-pre-icon">
+    <a href="/blog/">Blog</a>
+  </h5>
+
+  {{ $personalSection := .Site.GetPage "/personal/" }}
+  <h5 {{ if .InSection $personalSection }}class="isactive"{{ end }}>
+    <img src="/icons/chuchun.JPG" class="menu-pre-icon">
+    <a href="/personal/">Personal</a>
+  </h5>
+
+  </div>
+
+  <img height=120px src="/icons/complex2liu.jpg" id="avatar">
+
+  <p id="last-modified">
+    <img src="/icons/edit.svg">
+    Last modified: {{ now.Format "Jan 2, 15:04:05, 2006" }} (<a href="https://github.com/Complex2-Liu/homepage">Source</a>).
+  </p>
+
+</div>

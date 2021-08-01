@@ -1,0 +1,90 @@
+@font-face {
+  font-family: mychinese;
+  src: local("SimSun"), url("./fonts/Chinese-fonts/SimSun.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: mychinese;
+  src: local("SimHei"), url("./fonts/Chinese-fonts/SimHei.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: mychinese;
+  src: local("Kaiti"), url("./fonts/Chinese-fonts/Kaiti.ttf");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Computer Modern Serif";
+  src: url("./fonts/Computer-Modern/Serif/cmunrm.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Computer Modern Serif";
+  src: url("./fonts/Computer-Modern/Serif/cmunbx.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Computer Modern Serif";
+  src: url("./fonts/Computer-Modern/Serif/cmunti.ttf");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Computer Modern Serif";
+  src: url("./fonts/Computer-Modern/Serif/cmunbi.ttf");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Computer Modern Sans";
+  src: url("./fonts/Computer-Modern/Sans/cmunss.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Computer Modern Sans";
+  src: url("./fonts/Computer-Modern/Sans/cmunsx.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Computer Modern Sans";
+  src: url("./fonts/Computer-Modern/Sans/cmunsi.ttf");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Computer Modern Sans";
+  src: url("./fonts/Computer-Modern/Sans/cmunso.ttf");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "hack";
+  src: url("./fonts/Hack/Hack Regular Nerd Font Complete.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "hack";
+  src: url("./fonts/Hack/Hack Bold Nerd Font Complete.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "hack";
+  src: url("./fonts/Hack/Hack Italic Nerd Font Complete.ttf");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "hack";
+  src: url("./fonts/Hack/Hack Bold Italic Nerd Font Complete.ttf");
+  font-weight: bold;
+  font-style: italic;
+}

@@ -1,0 +1,25 @@
+{{ define "main" }}
+  <h1 class="content-title">{{ .Title }}</h1>
+  <div id="post-info">
+
+    <p id="post-date">
+      <img src="/icons/calendar.svg">
+      Date: {{ .Date.Format "January 2, 2006" }}
+    </p>
+
+    <p id="post-tags">
+      <img src="/icons/tag.svg">
+      <a href="/tags/" style="color: #000;">Tags:</a>
+        {{ with .Params.tags }}
+        {{ range . }}
+        <span class="tags-item">
+        <a href="/tags/{{ . | urlize }}">{{ . }}</a>
+        </span>
+        {{ end }}
+        {{ end }}
+    </p>
+
+  </div>
+  <hr>
+  {{ .Content }}
+{{ end }}
