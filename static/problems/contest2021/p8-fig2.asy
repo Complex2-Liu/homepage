@@ -1,0 +1,34 @@
+import olympiad;
+import cse5;
+size(10cm);
+pen small_pen=fontsize(9pt);
+defaultpen(fontsize(9pt));
+
+pair X=dir(50);
+pair A=dir(-145);
+pair B=dir(-35);
+pair Q_1=X+dir(-20);
+pair B_1=8*B-7*A;
+pair Q_2=8*Q_1-7*X;
+pair P=IntersectionPoint(X--dir(-90), A--B);
+pair Q=IntersectionPoint(X--Q_2, A--B_1);
+
+dot(X);
+dot(A);
+dot(B);
+dot(P);
+dot(Q);
+draw(MA(A,X,P,0.25,blue));
+draw(MA(P,X,B,0.35,red));
+draw(X--A--B--cycle);
+draw(X--P, dashed);
+draw(B--Q);
+draw(X--Q, dashed);
+label("$\alpha$", X, dir(-125)*7, small_pen+blue);
+label("$\beta$", X, dir(-95)*9, small_pen+red);
+label("$X$",X,N*1.5);
+label("$A$",A,S*1.5);
+label("$B$",B,S*1.5);
+label("$P$",P,S*1.5);
+label("$Q$",Q,S*1.5);
+label("$\ell$", 0.5*A+0.5*Q, N*1.5);
