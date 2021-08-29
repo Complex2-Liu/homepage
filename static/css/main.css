@@ -44,7 +44,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
     font-family: "Computer Modern Sans", Arial, mychinese;
-    margin: 8px 0px;
+    margin: 10px 0px;
 }
 h1 { font-size: 2em; display: block; }
 h2 { font-size: 1.75em; }
@@ -53,18 +53,19 @@ h4 { font-size: 1.25em; }
 h5 { font-size: 16.5px; }
 h6 { font-size: 15.75px; }
 
-p { margin: 8px 0px; }
+p { margin: 10px 0px; }
+li { margin: 10px 0px; }
 
 a:link, a:visited { color: #0000CC; text-decoration: none; }
 a:hover { color: #D2042D; text-decoration: underline; }
 
-ul, ol { margin-top: 8px; margin-bottom: 8px; }
+ul, ol { margin-top: 10px; margin-bottom: 10px; }
 
 pre {
 font-size: 13.5px;
 overflow-x: auto;
-padding: 8px;
-margin: 8px 0px;
+padding: 10px;
+margin: 10px 0px;
 border: 1.5px solid #000;
 border-radius: 12px;
 }
@@ -145,7 +146,7 @@ strong { color: #D2042D; }
   width: 100%;
   justify-content: space-between;
   border-bottom: 1.5px solid #000;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 #menu-collapse {
@@ -182,8 +183,8 @@ ul.taxonomycloud { padding-inline-start: 0px; }
 
 /* make the website reponsive */
 @media (min-width: 576px) {
-  img.lwrap { float: left; padding: 0px 12px 8px 12px; max-width: 40% !important; max-height: 360px; }
-  img.rwrap { float: right; padding: 0px 12px 8px 12px; max-width: 40% !important; max-height: 360px; }
+  img.lwrap { float: left; padding: 0px 12px 10px 12px; max-width: 40% !important; max-height: 360px; }
+  img.rwrap { float: right; padding: 0px 12px 10px 12px; max-width: 40% !important; max-height: 360px; }
 }
 
 @media (min-width: 768px) {
