@@ -68,7 +68,7 @@ margin: 8px 0px;
 border: 1.5px solid #000;
 border-radius: 12px;
 }
-p > code {
+p > code, li > code {
 color: #00FF00;
 font-size: 0.8em;
 background-color: #222;
