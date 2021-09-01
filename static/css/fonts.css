@@ -1,18 +1,18 @@
 @font-face {
   font-family: mychinese;
-  src: local("SimSun"), url("./fonts/Chinese-fonts/SimSun.ttf");
+  src: url("./fonts/Chinese-fonts/SourceHanSerifCN-Light.otf");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: mychinese;
-  src: local("SimHei"), url("./fonts/Chinese-fonts/SimHei.ttf");
+  src: url("./fonts/Chinese-fonts/SourceHanSansCN-Medium.otf");
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: mychinese;
-  src: local("Kaiti"), url("./fonts/Chinese-fonts/Kaiti.ttf");
+  src: url("./fonts/Chinese-fonts/FZKTJ.otf");
   font-weight: normal;
   font-style: italic;
 }
