@@ -104,6 +104,19 @@ body {
   font-style: normal;
 }
 
+/* Claim */
+.claim {
+  display: block;
+  margin: 8px 0;
+  font-style: normal;
+}
+.claim::before {
+  content: 'Claim. ';
+  font-family: "Computer Modern Sans";
+  font-weight: bold;
+  font-style: normal;
+}
+
 /* Remark */
 .rem {
   display: block;
