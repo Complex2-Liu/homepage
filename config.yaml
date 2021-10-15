@@ -1,0 +1,7 @@
+baseURL: "https://complex2math.com"
+languageCode: "en-us"
+title: "Homepage of Complex2-Liu"
+hasCJKLanguage: true
+
+params:
+  since: 2021
