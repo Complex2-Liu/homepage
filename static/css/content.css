@@ -1,0 +1,6 @@
+#content {
+  border: 1.5px solid var(--content-border-color);
+  border-radius: 12px;
+  padding: 1rem;
+  line-height: 1.5;
+}

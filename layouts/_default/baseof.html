@@ -4,9 +4,24 @@
 {{ partial "head.html" . }}
 
 <body>
-{{ block "main" . }}
 
+{{ partial "header.html" . }}
+
+{{ partial "menu.html" . }}
+
+<div id="main">
+
+<div id="content">
+{{ block "main" . }}
 {{ end }}
+</div>
+
+<div style="display: block;">
+This div is reserved for the comment widget.
+</div>
+
+</div>
+
 </body>
 
 {{ partial "footer.html" . }}

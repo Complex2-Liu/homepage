@@ -1,0 +1,6 @@
+header {
+  border: 1.5px solid var(--header-border-color);
+  border-radius: 12px;
+  margin: 2rem 0 1rem 0;
+  padding: 1rem;
+}

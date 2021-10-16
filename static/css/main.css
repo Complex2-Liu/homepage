@@ -1,0 +1,51 @@
+/* Global variable */
+:root {
+  --font-family-default: 'Roboto', 'PingFang SC', 'Noto Sans SC', sans-serif;
+  --font-family-alt: 'Poppins', 'PingFang SC', 'Noto Sans SC', sans-serif;
+
+  --header-border-color: rgb(4, 55, 242);
+  --menu-border-color: rgb(0, 163, 108);
+  --content-border-color: rgb(210, 4, 45);
+  --color-fg-default: #24292f;
+}
+
+/* Base Style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* include the padding and border in an element's total width and height */
+}
+
+html {
+  margin: 0 auto;
+  min-width: 320px;
+  font-family: var(--font-family-default);
+  font-size: 16px;
+}
+
+body {
+  margin: 0 1rem;
+  color: var(--color-fg-default);
+}
+
+/* Responsive Design */
+#main { margin: 1rem 0; }
+
+@media (min-width: 768px) {
+  html { width: 768px; }
+  body {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  header { width: 100%; }
+  nav { width: 210px; }
+  #main { width: 500px; }
+}
+
+@media (min-width: 1024px) {
+  html { width: 1024px; }
+  nav { width: 255px; }
+  #main { width: 695px; }
+}
