@@ -4,3 +4,21 @@ header {
   margin: 2rem 0 1rem 0;
   padding: 1rem;
 }
+
+#site-title {
+  font-family: var(--font-family-latex);
+  font-size: 2rem;
+  font-weight: 700;
+  font-variant: small-caps;
+}
+#site-title a { color: #000; }
+#site-title a:hover { color: #000; text-decoration: none; }
+
+#site-subtitle {
+  font-family: var(--font-family-latex);
+  font-size: 95%;
+  font-style: italic;
+  color: #770000;
+}
+#site-subtitle p { margin: 0.75rem 0; }
+#site-subtitle > *:last-child { margin-bottom: 0 !important; }

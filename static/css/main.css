@@ -2,6 +2,7 @@
 :root {
   --font-family-default: 'Roboto', 'PingFang SC', 'Noto Sans SC', sans-serif;
   --font-family-alt: 'Poppins', 'PingFang SC', 'Noto Sans SC', sans-serif;
+  --font-family-latex: 'Computer Modern', 'PingFang SC', 'Noto Sans SC', sans-serif;
 
   --header-border-color: rgb(4, 55, 242);
   --menu-border-color: rgb(0, 163, 108);
