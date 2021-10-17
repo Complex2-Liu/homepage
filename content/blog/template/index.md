@@ -65,3 +65,10 @@ $ fc-list | grep "Hack"
 鉴于各会员国业已咒誓同联合国合作以促进对人权合基本自由的普遍尊重合遵行,
 鉴于对即号权利合自由的普遍知空对于即个咒誓的充分实现具有设汰大的重要性,
 人人生而自由，在尊严合权利上一律平等.
+
+Let $R$ be a commutative ring with $1$. Assume $R$ is Noetherian.
+$$
+\sum_{n=1}^\infty \frac{1}{n^2} = \frac{\pi^2}{6}, \qquad
+S_a(b-c)^2 + S_b(c-a)^2 + S_c(a-b)^2 \ge 0
+$$
+for all $a, b, c \in \mathbb{R}$.
