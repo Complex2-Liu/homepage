@@ -91,6 +91,10 @@ ul, ol {
   padding-left: 2rem;
   margin-bottom: 1rem;
 }
+ul ul, ol ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
 li+li { margin-top: 0.25rem; }
 
 pre {
