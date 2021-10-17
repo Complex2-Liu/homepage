@@ -42,6 +42,7 @@
   --color-border-muted: hsla(210, 18%, 87%, 1);
   --color-border-subtle: rgba(27, 31, 36, 0.15);
   --color-bg-code: rgba(175, 184, 193, 0.2);
+  --color-avatar-shadow: 0 0 0 1px rgba(27, 31, 36, 0.15);
 
 }
 

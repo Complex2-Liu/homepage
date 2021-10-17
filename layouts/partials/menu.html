@@ -1,5 +1,72 @@
 <nav>
 
-Hello World
+<div id="nav-title">
+
+<div class="flex-center">
+<span> Menu </span>
+</div>
+
+<script>
+function divShow() {
+  document.getElementById("menu-collapse").style.display="block";
+  document.getElementById("menu-click").innerHTML='Hide';
+  document.getElementById("menu-click").setAttribute("onclick", "divHide()");
+}
+
+function divHide() {
+  document.getElementById("menu-collapse").style.display="";
+  document.getElementById("menu-click").innerHTML='Show';
+  document.getElementById("menu-click").setAttribute("onclick", "divShow()");
+}
+</script>
+
+<div class="flex-center">
+<button class="btn" id="menu-click" onclick="divShow()"> Show </button>
+</div>
+
+</div>
+
+<ul id="menu-collapse">
+{{ $currentPage := . }}
+{{ $site := $currentPage.Site }}
+
+{{ range .Site.Menus.main }}
+{{ $tmp := $site.GetPage .URL }}
+
+{{ $active := eq $tmp $currentPage }}
+
+  {{ if $tmp.IsSection }}
+  {{ $active = or $active ($currentPage.InSection $tmp) }}
+  {{ end }}
+
+  {{ if .HasChildren }}
+  <li class="{{ if $active }}active{{ end }}">
+  <a href="{{ .URL }}">{{ .Name }}</a>
+    <ul>
+    {{ range .Children }}
+    {{ $tmp_children := $site.GetPage .URL }}
+
+    {{ $children_active := eq $tmp_children $currentPage }}
+
+    <li class="{{ if $children_active }}active{{ end }}">
+    <a href="{{ .URL }}">{{ .Name }}</a>
+    </li>
+    {{ end }}
+    </ul>
+  </li>
+  {{ else }}
+  <li class="{{ if $active }}active{{ end }}">
+  <a href="{{ .URL }}">{{ .Name }}</a>
+  </li>
+  {{ end }}
+
+{{ end }}
+</ul>
+
+<img src="/image/complex2liu.jpg" id="avatar" alt="complex2liu">
+
+<p id="site-lastmod">
+Last modified: {{ now.Format "Jan 2, 15:04:05, 2006" }} (<a href="https://github.com/Complex2-Liu/homepage">Source</a>).
+</p>
 
 </nav>
