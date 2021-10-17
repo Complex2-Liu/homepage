@@ -125,6 +125,12 @@ hr {
   border: 0;
 }
 
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Responsive Design */
 #main { margin: 1rem 0; }
 
