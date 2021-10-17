@@ -1,6 +1,9 @@
 #content {
   border: 1.5px solid var(--content-border-color);
   border-radius: 12px;
-  padding: 1rem;
+  padding: 1rem 1.5rem;
   line-height: 1.5;
 }
+
+#content > *:first-child { margin-top: 0 !important; }
+#content > *:last-child { margin-bottom: 0 !important; }
