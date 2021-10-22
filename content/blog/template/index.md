@@ -40,6 +40,8 @@ eget dolor. **Aenean massa** strong. Cum sociis natoque penatibus et magnis dis
 parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
 pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
 
+{{<img src="./chuchun.JPG" alt="chuchun">}}
+
 ---
 
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
