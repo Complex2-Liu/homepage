@@ -75,7 +75,7 @@ h1, h2, h3, h4, h5 {
 h1 {
   padding-bottom: 0.3em;
   font-size: 2rem;
-  border-bottom: 1px solid var(--color-border-muted);
+  border-bottom: 1.5px solid var(--color-border-muted);
 }
 h2 {
   padding-bottom: 0.3em;
