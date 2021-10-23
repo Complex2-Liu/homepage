@@ -1,0 +1,17 @@
+{{ define "main" }}
+
+<h1 class="content-title">{{ .Title }}</h1>
+{{ .Content }}
+<hr>
+
+<p>All related contents are listed below:</p>
+
+<ul>
+{{ range .Pages.ByDate }}
+  <li>
+    <a href="{{ .Permalink }}">{{ .Title }}</a>
+  </li>
+{{ end }}
+</ul>
+
+{{ end }}
