@@ -7,3 +7,18 @@
 
 #content > *:first-child { margin-top: 0 !important; }
 #content > *:last-child { margin-bottom: 0 !important; }
+
+#content img {
+  display: block;
+  max-width: min(75%, 280px);
+  margin: 0 auto;
+  box-shadow: var(--color-avatar-shadow);
+}
+
+/* Reponsive Design */
+@media (min-width: 768px) {
+  #content img { max-width: 260px; }
+}
+@media (min-width: 1024px) {
+  #content img { max-width: 300px; }
+}
