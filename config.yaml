@@ -5,6 +5,10 @@ hasCJKLanguage: true
 
 permalinks:
   blog: /blog/:year/:month-:day/
+  categories: /blog/categories/:slug/
+
+taxonomies:
+  category: categories
 
 menu:
   main:
