@@ -3,6 +3,9 @@ languageCode: "en-us"
 title: "Homepage of Complex2-Liu"
 hasCJKLanguage: true
 
+permalinks:
+  blog: /blog/:year/:month-:day/
+
 menu:
   main:
   - identifier: home
