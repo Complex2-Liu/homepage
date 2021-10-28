@@ -1,0 +1,13 @@
+{{ define "main" }}
+
+<h1 class="content-title">Blog Posts Archived by {{ .Title }}</h1>
+<ul>
+{{ range .Data.Terms.ByCount }}
+<li>
+{{ .Page.Title }} &nbsp; &nbsp;
+<a href="{{ .Page.Permalink }}">{{ .Count }} articles</a>
+</li>
+{{ end }}
+</ul>
+
+{{ end }}

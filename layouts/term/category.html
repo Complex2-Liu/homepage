@@ -1,0 +1,13 @@
+{{ define "main" }}
+
+<h1 class="content-title">Blog Posts Categorized as {{ .Title }}</h1>
+<ul class="plain">
+{{ range .Data.Pages }}
+<li>
+<span class="item-title">{{ .Date.Format "Jan 02, 2006" }}</span>
+<a href="{{ .Permalink }}">{{ .Title }}</a>
+</li>
+{{ end }}
+</ul>
+
+{{ end }}
