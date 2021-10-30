@@ -1,0 +1,11 @@
+{{ with .Params.comment }}
+<div id="comment">
+<script src="https://utteranc.es/client.js"
+        repo="Complex2-Liu/homepage"
+        issue-term="{{ . }}"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+</div>
+{{ end }}

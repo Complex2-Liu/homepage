@@ -1,6 +1,8 @@
 ---
 title: "Blog Post Template Preview"
 date: 2021-10-15
+url: /blog/template/
+comment: /blog/template/
 draft: true
 ---
 
