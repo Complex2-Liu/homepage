@@ -1,0 +1,11 @@
+{{ $type := "Remark" }}
+{{ with .Get "type" }}
+{{ $type = . }}
+{{ end }}
+
+<div class="math-env-plain">
+<span style="font-weight: 500;">
+{{ $type }}.
+</span>
+{{ .Inner }}
+</div>

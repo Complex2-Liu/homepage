@@ -76,3 +76,36 @@ $$
 S_a(b-c)^2 + S_b(c-a)^2 + S_c(a-b)^2 \ge 0
 $$
 for all $a, b, c \in \mathbb{R}$.
+
+## Math Environment
+
+设 $\triangle ABC$ 的内心为 $I$.
+
+{{< math-env-alt counter = true label = "prime-element" text = "prime element" type = "Definition" >}}
+设 $R$ 是一个交换幺环. 我们称元素 $a$ 是素元, 如果主理想 $(a)$ 是素理想.
+{{< /math-env-alt >}}
+
+{{< math-env text = "fuck" counter = false >}}
+主理想整环一定是 UFD.
+{{< /math-env >}}
+
+
+{{< math-env-alt type = "Problem" counter = false >}}
+$\mathbb{Z}$ 是一个 PID.
+{{< /math-env-alt >}}
+
+{{< soln >}}
+Omitted.
+{{< /soln >}}
+
+{{< math-env type = "Lemma" counter = true >}}
+不可约元一定是素元.
+{{< /math-env >}}
+
+{{< proof type = "Proof" >}}
+Omitted.
+{{< /proof >}}
+
+{{< rem >}}
+这是一个 Remark.
+{{< /rem >}}

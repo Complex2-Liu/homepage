@@ -1,0 +1,34 @@
+{{ $root := . }}
+
+{{ with .Get "counter" }}
+
+{{ with $root.Page.Scratch.Get "math" }}
+  {{ $root.Page.Scratch.Set "math" (add . 1) }}
+{{ else }}
+  {{/* first call, set this counter to 1 */}}
+  {{ $root.Page.Scratch.Set "math" 1 }}
+{{ end }}
+
+{{ end }}
+
+{{ $counter := .Page.Scratch.Get "math" }}
+{{ $type := "Theorem" }}
+{{ with .Get "type" }}
+{{ $type = . }}
+{{ end }}
+
+<div class="math-env">
+{{ with .Get "label" }}
+<a id="math-{{ . }}"></a>
+{{ end }}
+<span style="font-weight: 500;">
+{{ if isset .Params "text" }}
+{{ $type }}{{ with .Get "counter" }} {{ $counter }}{{ end }}
+</span>
+({{ .Get "text" }})<span style="font-weight: 500;">.</span>
+{{ else }}
+{{ $type }}{{ with .Get "counter" }} {{ $counter }}{{ end }}.
+</span>
+{{ end }}
+{{ $root.Inner }}
+</div>

@@ -1,0 +1,14 @@
+{{ $type := "Proof" }}
+{{ with .Get "type" }}
+{{ $type = . }}
+{{ end }}
+
+<div class="math-env-plain">
+<span style="font-style: italic; font-family: var(--font-family-latex);"> 
+{{ $type }}.
+</span>
+{{ .Inner }}
+<span class="qed">
+$\square$
+</span>
+</div>
