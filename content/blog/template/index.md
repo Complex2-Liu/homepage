@@ -109,3 +109,9 @@ Omitted.
 {{< rem >}}
 这是一个 Remark.
 {{< /rem >}}
+
+{{< math-env-alt type = "Example" >}}
+UFD 未必是 PID.
+{{< /math-env-alt >}}
+
+See {{< url "https://math.stackexchange.com/questions/697204/" >}}
