@@ -10,6 +10,12 @@ permalinks:
 taxonomies:
   category: categories
 
+markup:
+  goldmark:
+    renderer:
+      # enable render raw HTML
+      unsafe: true
+
 menu:
   main:
   - identifier: home
