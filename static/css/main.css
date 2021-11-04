@@ -43,6 +43,7 @@
   --color-border-subtle: rgba(27, 31, 36, 0.15);
   --color-bg-code: rgba(175, 184, 193, 0.2);
   --color-avatar-shadow: 0 0 0 1px rgba(27, 31, 36, 0.15);
+  --color-neutral-muted: rgba(175, 184, 193, 0.2);
 
 }
 
@@ -172,6 +173,19 @@ p > mjx-container[jax="SVG"][display="true"]:last-child { margin-bottom: 0 !impo
   line-height: 20px;
 }
 .btn:hover { background-color: var(--color-btn-hover-bg); }
+
+.Counter {
+  display: inline-block;
+  min-width: 20px;
+  font-size: 12px;
+  padding: 0 6px;
+  line-height: 18px;
+  background-color: var(--color-neutral-muted);
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 2em;
+}
+.btn .Counter { margin-left: 2px; }
 
 .flex-center {
   display: flex;

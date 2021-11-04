@@ -1,11 +1,15 @@
 {{ define "main" }}
 
-<h1 class="content-title">Blog Posts Archived by {{ .Title }}</h1>
-<ul>
+<h1 class="content-title" style="font-family: Hack, monospace; font-size: 1.25rem; font-weight: bold; overflow: auto;">
+/blog/categories/
+</h1>
+<ul id="taxonomy">
 {{ range .Data.Terms.ByCount }}
 <li>
-{{ .Page.Title }} &nbsp; &nbsp;
-<a href="{{ .Page.Permalink }}">{{ .Count }} articles</a>
+<a href="{{ .Page.Permalink }}" class="btn">
+{{ .Page.Title }}
+<span class="Counter">{{ .Count }}</span>
+</a>
 </li>
 {{ end }}
 </ul>
