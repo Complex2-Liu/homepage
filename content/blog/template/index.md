@@ -1,6 +1,11 @@
 ---
 title: "Blog Post Template Preview"
 date: 2021-10-15
+authors:
+  - complex2liu
+  - someone
+categories:
+  - uncategorized
 url: /blog/template/
 comment: /blog/template/
 draft: true

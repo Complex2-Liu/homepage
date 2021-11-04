@@ -145,6 +145,10 @@ hr {
   border: 0;
 }
 
+time {
+  color: var(--color-fg-subtle);
+}
+
 mjx-container { overflow-x: auto; }
 mjx-container[jax="SVG"][display="true"] { margin: 0.75rem 0 !important; }
 p > mjx-container[jax="SVG"][display="true"]:last-child { margin-bottom: 0 !important; }

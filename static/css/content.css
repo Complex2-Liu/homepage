@@ -15,6 +15,44 @@
   box-shadow: var(--color-avatar-shadow);
 }
 
+#article-data {
+  border-top: 1.5px solid var(--color-border-muted);
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+#article-data ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+#article-data li {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  color: var(--color-fg-subtle);
+}
+#article-data li+li { margin-top: 0.5rem; }
+#article-data img {
+  width: 23px;
+  height: 23px;
+  margin-right: 4px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+  border-radius: 50%;
+  box-shadow: var(--color-avatar-shadow);
+}
+#article-data a.btn {
+  background-color: transparent;
+  color: var(--color-fg-yellow);
+  text-decoration: none;
+  margin-right: 4px;
+  margin-bottom: 4px;
+  font-family: var(--font-family-alt);
+}
+#article-data a.btn:hover {
+  border-color: var(--color-fg-yellow);
+}
+
 /* Reponsive Design */
 @media (min-width: 768px) {
   #content img { max-width: 260px; }

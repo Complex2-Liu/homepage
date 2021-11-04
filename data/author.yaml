@@ -1,0 +1,7 @@
+complex2liu:
+  name: Complex2-老爹
+  ref: <a href="https://github.com/complex2-liu/"><img src="https://github.com/complex2-liu.png" alt="author avatar"></a>
+
+someone:
+  name: someone
+  ref: (<a href="mailto:someone@example.com">Email</a>)

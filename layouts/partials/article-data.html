@@ -1,0 +1,57 @@
+<section id="article-data">
+<ul>
+{{ $root := . }}
+
+{{ with .Params.authors }}
+{{ $length := len . }}
+{{ $length = sub $length 1 }}
+{{ $lastitem := index . $length }}
+{{ $author_data := index $root.Site.Data.author }}
+<li>
+<span>Authors:</span>
+<span>
+{{ range . }}
+{{ $entry := index $author_data . }}
+  {{ if eq $lastitem . }}
+  {{ $entry.name }} {{ $entry.ref | markdownify }}
+  {{ else }}
+  {{ $entry.name }} {{ $entry.ref | markdownify }},
+  {{ end }}
+{{ end }}
+</span>
+</li>
+{{ end }}
+
+{{ if eq .Section "blog" }}
+<li>
+<span>Published:</span>
+<span>
+<time datetime="{{ .Date.Format "2006-01-02" }}">
+{{ .Date.Format "January 02, 2006" }}
+</time>
+</span>
+</li>
+{{ end }}
+
+<li>
+<span>Last modified:</span>
+<span>
+<time datetime="{{ .Lastmod.Format "2006-01-02" }}">
+{{ .Lastmod.Format "January 02, 2006" }}
+</time>
+</span>
+</li>
+
+{{ with .Params.categories }}
+<li>
+<span><a href="/blog/categories/" style="color: var(--color-fg-muted); text-decoration: none;">Categories:</a></span>
+<span>
+{{ range .}}
+<a href="/blog/categories/{{ . | urlize }}" class="btn btn-sm">{{ . }}</a>
+{{ end }}
+</span>
+</li>
+{{ end }}
+
+</ul>
+</section>
