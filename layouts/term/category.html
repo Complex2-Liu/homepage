@@ -3,6 +3,7 @@
 <h1 class="content-title" style="font-family: Hack, monospace; font-size: 1.25rem; font-weight: bold; overflow: auto;">
 /blog/categories/{{ .Page.Title }}/
 </h1>
+<section>
 <ul class="date-and-entry">
 {{ range .Data.Pages }}
 <li>
@@ -11,5 +12,5 @@
 </li>
 {{ end }}
 </ul>
-
+</section>
 {{ end }}

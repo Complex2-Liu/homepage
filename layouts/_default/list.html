@@ -1,9 +1,13 @@
 {{ define "main" }}
 
 <h1 class="content-title">{{ .Title }}</h1>
+<section>
 {{ .Content }}
+</section>
+
 <hr>
 
+<section>
 <p>All related contents are listed below:</p>
 
 <ul>
@@ -13,6 +17,7 @@
   </li>
 {{ end }}
 </ul>
+</section>
 
 {{ partial "article-data" . }}
 

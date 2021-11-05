@@ -2,13 +2,16 @@
 
 <h1 class="content-title">{{ .Title }}</h1>
 
+<section>
 <p>
 Welcome to my blog! You can browse it by <a href="/blog/categories/">categories</a>,
 or by year at the end of this page.
 </p>
 
 {{ .Content }}
+</section>
 
+<section>
 {{ range .Pages.GroupByDate "2006" }}
 <h2 style="color: var(--color-fg-magenta);">{{ .Key }}</h2>
 <ul class="date-and-entry">
@@ -20,5 +23,6 @@ or by year at the end of this page.
   {{ end }}
 </ul>
 {{ end }}
+</section>
 
 {{ end }}

@@ -3,6 +3,8 @@
 <h1 class="content-title" style="font-family: Hack, monospace; font-size: 1.25rem; font-weight: bold; overflow: auto;">
 /blog/categories/
 </h1>
+
+<section>
 <ul id="taxonomy">
 {{ range .Data.Terms.ByCount }}
 <li>
@@ -13,5 +15,5 @@
 </li>
 {{ end }}
 </ul>
-
+</section>
 {{ end }}
