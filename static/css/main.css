@@ -118,6 +118,14 @@ ul ul, ol ol {
 }
 li+li { margin-top: 0.25rem; }
 
+dl { margin: 1rem 0; }
+dt {
+  margin: 0.5rem 0;
+  color: var(--color-fg-green);
+  font-weight: 500;
+}
+dd { margin-left: 2rem; }
+
 pre {
   padding: 1rem;
   margin-bottom: 1rem;
