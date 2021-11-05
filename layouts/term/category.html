@@ -3,7 +3,7 @@
 <h1 class="content-title" style="font-family: Hack, monospace; font-size: 1.25rem; font-weight: bold; overflow: auto;">
 /blog/categories/{{ .Page.Title }}/
 </h1>
-<ul id="taxonomy-term">
+<ul class="date-and-entry">
 {{ range .Data.Pages }}
 <li>
 <span><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 02, 2006" }}</time></span>

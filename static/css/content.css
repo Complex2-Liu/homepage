@@ -61,12 +61,6 @@
 }
 #taxonomy a.btn:hover { border-color: var(--color-fg-yellow); text-decoration: none; }
 #taxonomy .Counter { background-color: var(--color-bg-orange-light); }
-#taxonomy-term { list-style-type: none; padding: 0; }
-#taxonomy-term li {
-  display: grid;
-  grid-template-columns: 110px 1fr;
-}
-#taxonomy-term li+li { margin-top: 0.5rem; }
 
 /* Reponsive Design */
 @media (min-width: 768px) {

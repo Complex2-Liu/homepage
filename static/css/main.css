@@ -193,6 +193,14 @@ p > mjx-container[jax="SVG"][display="true"]:last-child { margin-bottom: 0 !impo
   align-items: center;
 }
 
+.date-and-entry { list-style-type: none; padding: 0; }
+.date-and-entry li {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  column-gap: 1rem;
+}
+.date-and-entry time { float: right; }
+
 /* Responsive Design */
 #main { margin: 1rem 0; }
 
