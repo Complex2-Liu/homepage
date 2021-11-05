@@ -4,8 +4,23 @@
 <section>
 <p>
 Welcome! This is the homepage of Complex2-老爹.
+The 5 latest modified blog posts are listed below:
 </p>
 
+<h2>Recent Modified Blog Posts</h2>
+<ul class="date-and-entry">
+{{- range (first 5 (where site.RegularPages "Section" "blog").ByLastmod.Reverse) }}
+<li>
+<span><time>{{ .Lastmod.Format "Jan 02, 2006" }}</time></span>
+<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+</li>
+{{ end }}
+</ul>
+</section>
+
+<hr>
+
+<section>
 {{ .Content }}
 </section>
 
