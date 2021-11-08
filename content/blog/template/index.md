@@ -120,3 +120,58 @@ UFD 未必是 PID.
 {{< /math-env-alt >}}
 
 See {{< url "https://math.stackexchange.com/questions/697204/" >}}
+
+## Descirption List
+
+<dl>
+<dt>Description title A</dt>
+<dd>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+when an unknown printer took a galley of type and scrambled it to make a type
+specimen book. It has survived not only five centuries, but also the leap into
+electronic typesetting, remaining essentially unchanged. It was popularised in
+the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+and more recently with desktop publishing software like Aldus PageMaker
+including versions of Lorem Ipsum.
+</dd>
+
+<dt>Description title B</dt>
+<dd>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+when an unknown printer took a galley of type and scrambled it to make a type
+specimen book. It has survived not only five centuries, but also the leap into
+electronic typesetting, remaining essentially unchanged. It was popularised in
+the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+and more recently with desktop publishing software like Aldus PageMaker
+including versions of Lorem Ipsum.
+</dd>
+
+<dt>Description title C</dt>
+<dd>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+when an unknown printer took a galley of type and scrambled it to make a type
+specimen book. It has survived not only five centuries, but also the leap into
+electronic typesetting, remaining essentially unchanged. It was popularised in
+the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+and more recently with desktop publishing software like Aldus PageMaker
+including versions of Lorem Ipsum.
+</dd>
+</dl>
+
+See {{< cite target = "textbook" label = "1" >}}, {{< cref target = "prime-element" label = "Definition 1" >}}
+and {{< cite target = "terry-tao" label = "2" text = "Lemma 99.9.9" >}}.
+
+
+{{< references >}}
+{{< bibitem "textbook">}}
+M.F.Atiyah and I.G.MacDonald.
+<i>Introduction to Commutative Algebra</i>.
+Addison-Wesley series in mathematics.
+{{< /bibitem >}}
+{{< bibitem "terry-tao">}}
+{{< url "https://terrytao.wordpress.com/" >}}.
+{{< /bibitem >}}
+{{< /references >}}
