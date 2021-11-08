@@ -1,0 +1,13 @@
+{{ $root := . }}
+{{ with .Page.Scratch.Get "bib" }}
+  {{ $root.Page.Scratch.Set "bib" (add . 1) }}
+{{ else }}
+  {{/* first call, set this counter to 1 */}}
+  {{ .Page.Scratch.Set "bib" 1 }}
+{{ end }}
+{{ $counter := .Page.Scratch.Get "bib" }}
+
+<dt id="bib-{{ .Get 0 }}">[{{ $counter }}]</dt>
+<dd>
+{{ $root.Inner }}
+</dd>
