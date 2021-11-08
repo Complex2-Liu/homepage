@@ -1,6 +1,6 @@
 {{ $root := . }}
 {{ with .Get "text" }}
-[<a href="#bib-{{ $root.Get "target" }}" style="color: var(--color-fg-green);">{{ $root.Get "label" }}</a>, {{ $root.Get "text" }}]
+[ <a href="#bib-{{ $root.Get "target" }}" style="color: var(--color-fg-green);">{{ $root.Get "label" }}</a>, {{ $root.Get "text" }} ]
 {{ else }}
-[<a href="#bib-{{ $root.Get "target" }}" style="color: var(--color-fg-green);">{{ $root.Get "label" }}</a>]
+[ <a href="#bib-{{ $root.Get "target" }}" style="color: var(--color-fg-green);">{{ $root.Get "label" }}</a> ]
 {{ end }}
