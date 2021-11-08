@@ -213,6 +213,16 @@ p > mjx-container[jax="SVG"][display="true"]:last-child { margin-bottom: 0 !impo
 }
 .date-and-entry time { float: right; }
 
+.references {
+  font-family: var(--font-family-latex);
+  overflow-x: auto;
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  grid-row-gap: 0.5rem;
+}
+.references dt { margin: 0; font-weight: bold; }
+.references dd { margin-left: 0.5rem; }
+
 /* Responsive Design */
 #main { margin: 1rem 0; }
 
