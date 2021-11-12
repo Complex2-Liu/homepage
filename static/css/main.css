@@ -72,6 +72,7 @@ h1, h2, h3, h4, h5 {
   font-weight: 500;
   line-height: 1.25;
   font-family: var(--font-family-alt);
+  overflow-wrap: break-word;
 }
 h1 {
   padding-bottom: 0.3em;
@@ -94,7 +95,7 @@ h5 {
   font-size: 1.125rem;
   color: var(--color-fg-yellow);
 }
-p { margin-bottom: 1rem; }
+p { margin-bottom: 1rem; overflow-wrap: break-word; }
 
 a { color: var(--color-fg-blue); text-decoration: none; }
 a:hover { color: var(--color-fg-red); text-decoration: underline; }
