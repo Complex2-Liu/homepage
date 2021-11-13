@@ -113,6 +113,23 @@ ul, ol {
   padding-left: 2rem;
   margin-bottom: 1rem;
 }
+ol { counter-reset: ol; padding-left: 2.5rem; }
+ol > li { list-style-type: none; position: relative; right: 1.5rem; }
+ol > li:before {
+  counter-increment: ol;
+  content: "(" counter(ol, decimal) ")";
+  display: inline-block;
+  position: relative;
+  right: 1rem;
+  text-align: right;
+  width: 1.5rem;
+}
+ol.alpha > li:before {
+  content: "(" counter(ol, lower-alpha) ") ";
+}
+ol.roman > li:before {
+  content: "(" counter(ol, lower-roman) ") ";
+}
 ul ul, ol ol {
   margin-top: 0.25rem;
   margin-bottom: 0;
