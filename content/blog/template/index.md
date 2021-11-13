@@ -23,6 +23,10 @@ draft: true
 有必要互人权受法治的保庇, 鉴于有必要促进各国间好斗头关系的发展,
 鉴于各联合国国家的人民已在联合国宪章中对头讲因对基本人权,
 人格尊严合价值以及丈夫查某平等权利的信念.
+{{<fn "1" >}}
+有必要互人权受法治的保庇, 鉴于有必要促进各国间好斗头关系的发展,
+鉴于各联合国国家的人民已在联合国宪章中对头讲因对基本人权,
+人格尊严合价值以及丈夫查某平等权利的信念.
 
 1. Ordered List item 1
 2. Ordered List item 2
@@ -105,6 +109,7 @@ Omitted.
 
 {{< math-env type = "Lemma" counter = true >}}
 不可约元一定是素元.
+{{<fn "theorem" >}}
 {{< /math-env >}}
 
 {{< proof type = "Proof" >}}
@@ -175,3 +180,12 @@ Addison-Wesley series in mathematics.
 {{< url "https://terrytao.wordpress.com/" >}}.
 {{< /bibitem >}}
 {{< /references >}}
+
+{{<fnol>}}
+{{<fnli "1">}}
+This is a foonote.
+{{</fnli>}}
+{{<fnli "theorem">}}
+This is another foonote.
+{{</fnli>}}
+{{</fnol>}}

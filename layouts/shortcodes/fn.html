@@ -1,0 +1,12 @@
+{{ $root := . }}
+{{ with $root.Page.Scratch.Get "footnote" }}
+  {{ $root.Page.Scratch.Set "footnote" (add . 1) }}
+{{ else }}
+  {{/* first call, set this counter to 1 */}}
+  {{ $root.Page.Scratch.Set "footnote" 1 }}
+{{ end }}
+
+{{ $counter := .Page.Scratch.Get "footnote" }}
+<sup id="fnref:{{ .Get 0 }}">
+<a href="#fn:{{ .Get 0 }}" class="footnote-ref" role="doc-noteref">[{{ $counter }}]</a>
+</sup>
