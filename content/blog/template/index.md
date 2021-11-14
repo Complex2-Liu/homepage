@@ -141,6 +141,13 @@ and more recently with desktop publishing software like Aldus PageMaker
 including versions of Lorem Ipsum.
 </dd>
 
+<figure class="floatright">
+<img src="./chuchun.JPG">
+<figcaption>
+可爱!
+</figcaption>
+</figure>
+
 <dt>Description title B</dt>
 <dd>
 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
