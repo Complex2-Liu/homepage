@@ -178,13 +178,13 @@ and {{< cite target = "terry-tao" label = "2" text = "Lemma 99.9.9" >}}.
 
 ## Image Gallery
 
-<div class="gallery">
+{{<img-gallery>}}
 {{<img src="./chuchun.JPG" alt="chuchun">}}
 {{<img src="./chuchun.JPG" alt="chuchun">}}
 {{<img src="./chuchun.JPG" alt="chuchun">}}
 {{<img src="./chuchun.JPG" alt="chuchun">}}
 {{<img src="./chuchun.JPG" alt="chuchun">}}
-</div>
+{{</img-gallery>}}
 
 
 {{< references >}}
