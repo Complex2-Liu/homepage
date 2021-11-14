@@ -270,6 +270,21 @@ p > mjx-container[jax="SVG"][display="true"]:last-child { margin-bottom: 0 !impo
 }
 .footnotes li+li { margin-top: 0.5rem; }
 
+.gallery {
+  display: grid;
+  width: 80%;
+  margin: 1rem auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.25rem;
+}
+.gallery p { margin: 0; }
+.gallery img {
+  margin: 0 !important;
+  width: 100% !important;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
 /* Responsive Design */
 #main { margin: 1rem 0; }
 

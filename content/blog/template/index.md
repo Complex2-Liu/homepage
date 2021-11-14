@@ -176,6 +176,16 @@ including versions of Lorem Ipsum.
 See {{< cite target = "textbook" label = "1" >}}, {{< cref target = "prime-element" label = "Definition 1" >}}
 and {{< cite target = "terry-tao" label = "2" text = "Lemma 99.9.9" >}}.
 
+## Image Gallery
+
+<div class="gallery">
+{{<img src="./chuchun.JPG" alt="chuchun">}}
+{{<img src="./chuchun.JPG" alt="chuchun">}}
+{{<img src="./chuchun.JPG" alt="chuchun">}}
+{{<img src="./chuchun.JPG" alt="chuchun">}}
+{{<img src="./chuchun.JPG" alt="chuchun">}}
+</div>
+
 
 {{< references >}}
 {{< bibitem "textbook">}}
