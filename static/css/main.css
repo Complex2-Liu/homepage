@@ -188,7 +188,7 @@ figure {
   background-color: var(--color-bg-subtle);
   padding: 0.5rem;
 }
-figure > img {
+figure img {
   margin: 0 !important;
   max-width: 100% !important;
 }

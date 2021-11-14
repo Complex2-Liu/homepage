@@ -141,12 +141,9 @@ and more recently with desktop publishing software like Aldus PageMaker
 including versions of Lorem Ipsum.
 </dd>
 
-<figure class="floatright">
-<img src="./chuchun.JPG">
-<figcaption>
+{{<figure class="floatright" src="./chuchun.JPG" alt="chuchun">}}
 可爱!
-</figcaption>
-</figure>
+{{</figure>}}
 
 <dt>Description title B</dt>
 <dd>
