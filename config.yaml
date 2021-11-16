@@ -7,6 +7,17 @@ permalinks:
   blog: /blog/:year/:month-:day/
   categories: /blog/categories/:slug/
 
+outputs:
+  home:
+    - HTML
+  taxonomy:
+    - HTML
+  term:
+    - HTML
+  blog:
+    - HTML
+    - RSS
+
 taxonomies:
   category: categories
 
