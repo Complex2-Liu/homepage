@@ -183,6 +183,36 @@ and {{< cite target = "terry-tao" label = "2" text = "Lemma 99.9.9" >}}.
 {{<img src="./chuchun.JPG" alt="chuchun">}}
 {{</img-gallery>}}
 
+## 表格 Table
+
+This is a table
+
+{{<table>}}
+| Column 1 | Column 2 | Column 3 | Column 4 |
+|:-------|:------:|:------:|-------:|
+|haha    | haha   |hahaha  |Fuck    |
+|haha    | haha   |hahaha  |Fuck    |
+|haha    | haha   |hahaha  |Fuck    |
+{{</table>}}
+
+This is a full-width table
+
+{{<table class="full-width">}}
+| 第一列 | 第二列 | 第三列 | 第四列 |
+|:-------|:------:|:------:|-------:|
+|haha    | haha   |hahaha  |Fuck    |
+|haha    | haha   |hahaha  |Fuck    |
+|haha    | haha   |hahaha  |Fuck    |
+{{</table>}}
+
+This is a long width table
+{{<table>}}
+| Column 1 | Column 2 | Column 3 | Column 4 |
+|:-------|:------:|:------:|-------:|
+|haha    | haha   |hahaha  |Fuckkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk    |
+|haha    | haha   |hahaha  |Fuck    |
+|haha    | haha   |hahaha  |Fuck    |
+{{</table>}}
 
 {{< references >}}
 {{< bibitem "textbook">}}
