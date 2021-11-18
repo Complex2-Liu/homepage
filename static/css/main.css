@@ -33,6 +33,7 @@
   --color-bg-magenta: #BF3989;
   --color-bg-orange: #BC4C00;
   --color-bg-yellow: #BF8700;
+  --color-bg-reverse: #24292F;
   --color-bg-red-light: #FFEBE9;
   --color-bg-green-light: #DAFBE1;
   --color-bg-blue-light: #DDF4FF;
@@ -197,6 +198,29 @@ figcaption {
   color: var(--color-fg-muted);
   text-align: center;
 }
+
+table {
+  width: max-content;
+  max-width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+table th, table td {
+  padding: 6px 13px;
+  border: 1px solid var(--color-border-default);
+  font-weight: normal;
+}
+table th { 
+  font-weight: 600;
+}
+table tr {
+  background-color: var(--color-canvas-default);
+  border-top: 1px solid var(--color-border-muted);
+}
+tr:nth-child(2n) {
+  background-color: var(--color-canvas-subtle);
+}
+.full-width > table { width: 100%; }
 
 section { display: block; margin: 1rem 0; }
 section > *:last-child { margin-bottom: 0 !important; }
