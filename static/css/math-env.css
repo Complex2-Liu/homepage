@@ -5,6 +5,9 @@
   width: 100%;
   padding: 0.75rem;
 }
+.math-env > *:last-child {
+  margin-bottom: 0 !important;
+}
 
 .math-env-alt {
   display: block;
@@ -13,11 +16,17 @@
   width: 100%;
   padding: 0.75rem;
 }
+.math-env-alt > *:last-child {
+  margin-bottom: 0 !important;
+}
 
 .math-env-plain {
   display: block;
   width: 100%;
   margin: 1rem 0;
+}
+.math-env-plain > *:last-child {
+  margin-bottom: 0 !important;
 }
 
 span.qed {
