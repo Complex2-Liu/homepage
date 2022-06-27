@@ -1,0 +1,8 @@
+#!/bin/sh
+
+USER=root
+HOST=complex2math.com
+DIR=/var/www/complex2math/
+
+hugo && rsync -avz --delete public/ ${USER}@${HOST}:${DIR}
+exit 0
