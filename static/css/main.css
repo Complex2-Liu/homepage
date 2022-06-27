@@ -309,6 +309,9 @@ p > mjx-container[jax="SVG"][display="true"]:last-child { margin-bottom: 0 !impo
   object-fit: cover;
 }
 .full-width {
+  max-width: 100%;
+}
+img.full-width {
   max-width: max-content !important;
   box-shadow: 0 0 0 !important;
 }
