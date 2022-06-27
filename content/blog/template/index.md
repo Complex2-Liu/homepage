@@ -1,6 +1,6 @@
 ---
 title: "Blog Post Template Preview"
-date: 2021-10-15
+date: 2021-07-07
 authors:
   - complex2liu
   - someone
