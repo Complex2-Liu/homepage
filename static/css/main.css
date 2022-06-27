@@ -98,7 +98,7 @@ h5 {
   font-size: 1.125rem;
   color: var(--color-fg-yellow);
 }
-p { margin-bottom: 1rem; overflow-wrap: break-word; }
+p { margin: 1rem 0; overflow-wrap: break-word; }
 
 a { color: var(--color-fg-blue); text-decoration: none; }
 a:hover { color: var(--color-fg-red); text-decoration: underline; }
@@ -114,7 +114,7 @@ blockquote > :first-child { margin-top: 0 !important; }
 
 ul, ol {
   padding-left: 2rem;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
 }
 ol { counter-reset: ol; padding-left: 2.5rem; }
 ol > li { list-style-type: none; position: relative; right: 1.5rem; }
@@ -226,7 +226,7 @@ section { display: block; margin: 1rem 0; }
 section > *:last-child { margin-bottom: 0 !important; }
 section > *:first-child { margin-top: 0 !important; }
 
-mjx-container { overflow-x: auto; }
+mjx-container { overflow-x: auto; overflow-y: hidden; }
 mjx-container[jax="SVG"][display="true"] { margin: 0.75rem 0 !important; }
 p > mjx-container[jax="SVG"][display="true"]:last-child { margin-bottom: 0 !important; }
 
