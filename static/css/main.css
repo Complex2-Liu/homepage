@@ -157,6 +157,7 @@ pre {
   border-radius: 6px;
 }
 code {
+  font-family: "Hack", monospace;
   padding: 0.2em 0.4em;
   font-size: 85%;
   background-color: var(--color-bg-code);
