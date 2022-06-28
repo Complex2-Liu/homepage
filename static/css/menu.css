@@ -24,10 +24,6 @@ nav > *:last-child { margin-bottom: 0 !important; }
   width: 70px;
   background-color: var(--color-bg-yellow-light);
 }
-#menu-click:hover {
-  background-color: var(--color-bg-yellow);
-  color: var(--color-fg-reverse);
-}
 
 #menu-collapse {
   display: none;
