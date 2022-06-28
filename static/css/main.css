@@ -318,6 +318,45 @@ p.full-width {
   overflow: auto;
 }
 
+.box {
+  display: block;
+  margin: 1rem 0;
+  padding: 0.75rem;
+  border: 1px solid var(--color-fg-default);
+  background-color: var(--color-bg-subtle);
+  border-radius: 4px;
+}
+.box > *:last-child { margin-bottom: 0 !important; }
+.box-red {
+  background-color: var(--color-bg-red-light);
+  border: 1px solid var(--color-bg-red);
+}
+.box-blue {
+  background-color: var(--color-bg-blue-light);
+  border: 1px solid var(--color-bg-blue);
+}
+.box-green {
+  background-color: var(--color-bg-green-light);
+  border: 1px solid var(--color-bg-green);
+}
+.box-yellow {
+  background-color: var(--color-bg-yellow-light);
+  border: 1px solid var(--color-bg-yellow);
+}
+.box-orange {
+  background-color: var(--color-bg-orange-light);
+  border: 1px solid var(--color-bg-orange);
+}
+.box-purple {
+  background-color: var(--color-bg-purple-light);
+  border: 1px solid var(--color-bg-purple);
+}
+.box-magenta {
+  background-color: var(--color-bg-magenta-light);
+  border: 1px solid var(--color-bg-magenta);
+}
+
+
 /* Responsive Design */
 #main { margin: 1rem 0; }
 
