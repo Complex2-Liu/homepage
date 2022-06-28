@@ -315,6 +315,9 @@ img.full-width {
   max-width: max-content !important;
   box-shadow: 0 0 0 !important;
 }
+p.full-width {
+  overflow: auto;
+}
 
 /* Responsive Design */
 #main { margin: 1rem 0; }
