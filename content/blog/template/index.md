@@ -214,6 +214,64 @@ This is a long width table
 |haha    | haha   |hahaha  |Fuuk    |
 {{</table>}}
 
+## Box
+
+{{<box>}}
+This is line 1.
+<p>
+This is line 2.
+</p>
+{{</box>}}
+
+{{<box color="red">}}
+This is line 1.
+<p>
+This is line 2.
+</p>
+{{</box>}}
+
+{{<box color="blue">}}
+This is line 1.
+<p>
+This is line 2.
+</p>
+{{</box>}}
+
+{{<box color="green">}}
+This is line 1.
+<p>
+This is line 2.
+</p>
+{{</box>}}
+
+{{<box color="yellow">}}
+This is line 1.
+<p>
+This is line 2.
+</p>
+{{</box>}}
+
+{{<box color="orange">}}
+This is line 1.
+<p>
+This is line 2.
+</p>
+{{</box>}}
+
+{{<box color="purple">}}
+This is line 1.
+<p>
+This is line 2.
+</p>
+{{</box>}}
+
+{{<box color="magenta">}}
+This is line 1.
+<p>
+This is line 2.
+</p>
+{{</box>}}
+
 {{< references >}}
 {{< bibitem "textbook">}}
 M.F.Atiyah and I.G.MacDonald.
