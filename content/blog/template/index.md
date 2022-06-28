@@ -8,7 +8,7 @@ categories:
   - uncategorized
 url: /blog/template/
 comment: /blog/template/
-draft: true
+draft: false
 ---
 
 这个网页由 [hugo](https://hugo.io) 生成.
@@ -94,7 +94,7 @@ for all $a, b, c \in \mathbb{R}$.
 设 $R$ 是一个交换幺环. 我们称元素 $a$ 是素元, 如果主理想 $(a)$ 是素理想.
 {{< /math-env-alt >}}
 
-{{< math-env text = "fuck" counter = false >}}
+{{< math-env text = "fuuk" counter = false >}}
 主理想整环一定是 UFD.
 {{< /math-env >}}
 
@@ -190,9 +190,9 @@ This is a table
 {{<table>}}
 | Column 1 | Column 2 | Column 3 | Column 4 |
 |:-------|:------:|:------:|-------:|
-|haha    | haha   |hahaha  |Fuck    |
-|haha    | haha   |hahaha  |Fuck    |
-|haha    | haha   |hahaha  |Fuck    |
+|haha    | haha   |hahaha  |Fuuk    |
+|haha    | haha   |hahaha  |Fuuk    |
+|haha    | haha   |hahaha  |Fuuk    |
 {{</table>}}
 
 This is a full-width table
@@ -200,18 +200,18 @@ This is a full-width table
 {{<table class="full-width">}}
 | 第一列 | 第二列 | 第三列 | 第四列 |
 |:-------|:------:|:------:|-------:|
-|haha    | haha   |hahaha  |Fuck    |
-|haha    | haha   |hahaha  |Fuck    |
-|haha    | haha   |hahaha  |Fuck    |
+|haha    | haha   |hahaha  |Fuuk    |
+|haha    | haha   |hahaha  |Fuuk    |
+|haha    | haha   |hahaha  |Fuuk    |
 {{</table>}}
 
 This is a long width table
 {{<table>}}
 | Column 1 | Column 2 | Column 3 | Column 4 |
 |:-------|:------:|:------:|-------:|
-|haha    | haha   |hahaha  |Fuckkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk    |
-|haha    | haha   |hahaha  |Fuck    |
-|haha    | haha   |hahaha  |Fuck    |
+|haha    | haha   |hahaha  |Fuukkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk    |
+|haha    | haha   |hahaha  |Fuuk    |
+|haha    | haha   |hahaha  |Fuuk    |
 {{</table>}}
 
 {{< references >}}
