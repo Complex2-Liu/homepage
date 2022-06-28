@@ -350,8 +350,8 @@ p.full-width {
 }
 
 @media (min-width: 1024px) {
-  html { width: 1024px; }
-  nav { width: 255px; }
-  #main { width: 695px; }
+  html { width: 880px; }
+  nav { width: 225px; }
+  #main { width: 585px; }
   figure { max-width: 320px; }
 }
