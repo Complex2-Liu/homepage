@@ -1,5 +1,5 @@
 ---
-title: "IMO 2022 Problem 4"
+title: "IMO 2022 Problem 1 and 4"
 date: 2022-07-20
 comment: /blog/2022/07-20/
 authors:
