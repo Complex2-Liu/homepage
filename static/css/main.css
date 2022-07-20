@@ -228,7 +228,7 @@ section > *:last-child { margin-bottom: 0 !important; }
 section > *:first-child { margin-top: 0 !important; }
 
 mjx-container { overflow-x: auto; overflow-y: hidden; }
-mjx-container[jax="SVG"][display="true"] { margin: 0.75rem 0 !important; }
+mjx-container[jax="SVG"][display="true"] { margin: 1rem 0 !important; }
 p > mjx-container[jax="SVG"][display="true"]:last-child { margin-bottom: 0 !important; }
 
 .btn {
