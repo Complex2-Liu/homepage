@@ -1,6 +1,7 @@
 ---
 title: "IMO 2022 Problem 1 and 4"
 date: 2022-07-20
+lastmod: 2022-07-27
 comment: /blog/2022/07-20/
 authors:
   - complex2liu
@@ -90,12 +91,14 @@ the leftmost $n$ coins will all be of the same type.
 注意这里 $a_j$ 可以是 $0$, 但如果是这样, then $a_i$ is also $0$ for all $i \ge j$,
 the same is true of $b_j$. 无论如何我们总是有
 
-$$
-\sum_{i=1}^n a_i = \sum_{i=1}^n b_i = 0.
-$$
+\begin{equation}
+\label{eq:sum-is-n}
+\sum_{i=1}^n a_i = \sum_{i=1}^n b_i = n.
+\end{equation}
 
 Assemble the data, we obtain a $2\times n$ data matrix
 
+<div style="overflow-x: auto;">
 \begin{equation}
 \label{eq:data-matrix}
 M_0 =
@@ -104,13 +107,14 @@ a_1 & a_2 & a_3 & \cdots & a_{n-1} & a_n \\\
 b_1 & b_2 & b_3 & \cdots & b_{n-1} & b_n
 \end{pmatrix}.
 \end{equation}
+</div>
 
 对于矩阵 $M_0$, 我们来定义两个量 $u_0, v_0$:
 这里 $u_0$ 是满足 $a_i = 0$ for all $i \ge u_0$ 的最小正整数,
 $v_0$ 的定义同理.
 
 {{< math-env type = "Claim" >}}
-When $n \le k \le 2n$, it works.
+When $n \le k \le \lceil \frac{3n}{2} \rceil$, it works.
 {{< /math-env >}}
 
 {{< proof >}}
@@ -145,10 +149,23 @@ a_1 & a_2 & a_3 & \cdots & a_{\ell-1} & a_{\ell} + a_{\ell+1} & a_{\ell+2} & a_{
 \end{equation}
 </div>
 
-<p style="margin-top: 0; margin-bottom: 1rem;">
-对于 \eqref{eq:operation-type-b}, 我们有 $u_1 + v_1 = u_0 + v_0 - 1$.
+<p style="margin-top: 0;">
 对于 \eqref{eq:operation-type-a}, 因为 $a_1 < n$, 所以必有 $\ell \ge 2$,
-从而此时 $u_1 + v_1 = u_0 + v_0 - 2$.
+从而此时 $u_1 = u_0 - 1, v_1 \le v_0$ (这里有可能出现 $b_\ell = 0$ 的情况),
+即 $u_1 + v_1 \le u_0 + v_0 - 1$.
+</p>
+
+对于 \eqref{eq:operation-type-b}, $u_1 = v_0, v_1 \le u_0$, 等号什么时候成立?
+等号成立当且仅当 $a_{\ell + 1} = 0$, 即 $b_\ell$ 对应的那个 $B$-chain 恰好就是最后一个 chain.
+我们不希望这样的情况发生, 我们希望 $u_1 + v_1$ 严格地比 $u_0 + v_0$ 小.
+反设结论不成立, 即 $u_i + v_i = u_{i+1} + v_{i+1}$ for all $i \in \mathbb{N}$,
+那么每一次挑选出来的那个第 $k$ 枚硬币都恰好位于最后一个 chain.
+因为 $k \le \lceil \frac{3n}{2} \rceil$, 这意味着最后一个 chain 的长度
+$\ge \lfloor \frac{n}{2} \rfloor + 1$.
+注意到在反证的前提下, 每一个 chain (无论是 $A$-chain 还是 $B$-chain) 都能成为最后一个 chain,
+这告诉我们只要 $a_i \ne 0$, 那么 $a_i \ge \lfloor \frac{n}{2} \rfloor + 1$, the same is true of $b_i$.
+这与 \eqref{eq:sum-is-n} 矛盾.
+<p>
 </p>
 
 若干步之后我们有 $u_N = 2, v_N = 2$. Done.
@@ -176,4 +193,30 @@ $1 \le k \le n - 1$ are invalid.
 </ul>
 
 Under this situation, the sequence formed by coins $A$ and $B$ is invariant.
+{{< /proof >}}
+
+{{< math-env type = "Claim" >}}
+$ \lceil \frac{3n}{2} \rceil + 1 \le k \le 2n$ are invalid.
+{{< /math-env >}}
+
+{{< proof >}}
+我们考虑如下形式的初始状态:
+
+<ul>
+<li>
+前 $\lceil \frac{n}{2} \rceil$ 枚硬币都是 $A$.
+</li>
+<li>
+之后 $\lceil \frac{n}{2} \rceil$ 枚硬币都是 $B$.
+</li>
+<li>
+之后 $\lfloor \frac{n}{2} \rfloor$ 枚硬币都是 $A$.
+</li>
+<li>
+之后 $\lfloor \frac{n}{2} \rfloor$ 枚硬币都是 $B$.
+</li>
+</ul>
+
+Under this situation, the sequence formed by coins $A$ and $B$
+is permuted after each operation.
 {{< /proof >}}
