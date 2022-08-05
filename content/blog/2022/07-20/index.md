@@ -54,7 +54,7 @@ $$
 Done.
 
 {{< math-env-alt type = "Problem" >}}
-he Bank of Oslo issues two types of coin:
+The Bank of Oslo issues two types of coin:
 aluminium (denoted $A$) and bronze (denoted $B$).
 Marianne has $n$ aluminium coins and $n$ bronze coins,
 arranged in a row in some arbitrary initial order.
