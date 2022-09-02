@@ -65,4 +65,5 @@ Charles A. Weibel - An Introduction to Homological Algebra - Cambridge Studies i
 William M. Boothby - An Introduction to Differentiable Manifolds and Riemannian Geometry - Second Edition.pdf   | ✅             | ✅       | ✅                 | ✅            |
 [Ronald Brown - Topology and Groupoids - Third Edition.pdf](http://groupoids.org.uk/pdffiles/topgrpds-e.pdf)    | ✅             | ✅       | ✅                 | ✅            |
 M. A. Armstrong - Basic Topology - Undergraduate Texts in Mathematics (GTM).pdf                                 | ✅             | ✅       | ✅                 | ✅            |
+Robin Hartshorne - Algebraic Geometry - GTM 52.pdf                                                              | ✅             | ✅       | ✅                 | ✅            |
 {{</table>}}
