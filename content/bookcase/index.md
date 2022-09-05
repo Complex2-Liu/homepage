@@ -66,4 +66,7 @@ William M. Boothby - An Introduction to Differentiable Manifolds and Riemannian 
 [Ronald Brown - Topology and Groupoids - Third Edition.pdf](http://groupoids.org.uk/pdffiles/topgrpds-e.pdf)    | ✅             | ✅       | ✅                 | ✅            |
 M. A. Armstrong - Basic Topology - Undergraduate Texts in Mathematics (GTM).pdf                                 | ✅             | ✅       | ✅                 | ✅            |
 Robin Hartshorne - Algebraic Geometry - GTM 52.pdf                                                              | ✅             | ✅       | ✅                 | ✅            |
+Daniel A. Marcus - Number Fields - Second Edition.pdf                                                           | ✅             | ✅       | ✅                 | ✅            |
+Jean-Pierre Serre - Local Fields - GTM 67.pdf                                                                   | ✅             | ✅       | ✅                 | ✅            |
+Serge Lang - Algebraic Number Theory - Second Edition - GTM 110.pdf                                             | ✅             | ✅       | ✅                 | ✅            |
 {{</table>}}
