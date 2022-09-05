@@ -1,7 +1,7 @@
 ---
 title: "藏书阁"
 date: 2022-03-22
-lastmod: 2022-03-22
+lastmod: 2022-09-05
 comment: /bookcase/
 authors:
   - complex2liu
@@ -69,4 +69,5 @@ Robin Hartshorne - Algebraic Geometry - GTM 52.pdf                              
 Daniel A. Marcus - Number Fields - Second Edition.pdf                                                           | ✅             | ✅       | ✅                 | ✅            |
 Jean-Pierre Serre - Local Fields - GTM 67.pdf                                                                   | ✅             | ✅       | ✅                 | ✅            |
 Serge Lang - Algebraic Number Theory - Second Edition - GTM 110.pdf                                             | ✅             | ✅       | ✅                 | ✅            |
+Jürgen Neukirch - Algebraic Number Theory - Grundlehren der mathematischen Wissenschaften (volume 322).pdf      | ✅             | ✅       | ✅                 | ✅            |
 {{</table>}}
