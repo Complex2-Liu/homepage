@@ -1,6 +1,7 @@
 ---
 title: "Lattice"
 date: 2022-09-29
+lastmod: 2022-10-02
 comment: /blog/2022/09-29/
 authors:
   - complex2liu
@@ -138,6 +139,33 @@ $$
 
 {{<cref target = "discrete" label = "Proposition 1">}} 告诉我们像
 $\mathbb{Z} + \mathbb{Z}\sqrt{2}$ 这样的东西一定不是 $\mathbb{R}$ 的离散子群.
+事实上这个子群在 $\mathbb{R}$ 中稠密
+(c.f. {{<cref target = "dense" label = "Proposition 3">}} below).
+
+设 $G$ 是 $\mathbb{R}$ 的一个加法子群, 在子拓扑意义下, $G$ 是一个拓扑加法群,
+所以 $G$ 中任意两点都是**局部同胚**的.
+于是如果 $0 \in G$ 是孤立点, 那么任意 $g \in G$ 都是孤立的.
+$G$ 是离散子群相当于说存在最小元, 这个最小元就是我们前面那个 $\alpha$.
+反之, 如果 $G$ 中不存在这样的最小元, 我们说明这个时候 $G$ is dense in $\mathbb{R}$.
+
+{{<math-env type = "Proposition" counter = "true" label = "dense">}}
+Let $G$ be an additive subgroup of $\mathbb{R}$ which doesn't
+have a least positive element (equivalently $G$ is not discrete),
+then $G$ is dense in $\mathbb{R}$.
+{{</math-env>}}
+
+{{<proof>}}
+Fix $y \in \mathbb{R}$ and $\varepsilon > 0$.
+Choose $x \in G$ such that $0 < x < \varepsilon$.
+There exists $n \in \mathbb{N}$ such that
+$$
+nx \le y < (n+1)x,
+$$
+hence $|y - nx| < x < \varepsilon$.
+Now $nx \in G$ and $\varepsilon$ is arbitrary,
+we conclude that $y \in \overline{G}$.
+{{</proof>}}
+
 
 ## Minkowski's Lattice Point Theorem
 
