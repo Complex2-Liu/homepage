@@ -27,7 +27,10 @@ The solutions I provided below is **UNOFFICIAL**,
 I don't have any relation with MACMO official,
 all of my works are based on personal interests.
 
-- MACMO 2022 coming soon.
+- MACMO 2023 coming soon.
+- MACMO 2022 (<a href="./sols-2022.pdf">problems and solutions</a>)
+(<a href="./sols-2022.tar.gz">src</a>)
+([git](https://github.com/complex2-liu/macau-olympiad/tree/main/contest-2022/))
 - MACMO 2021 (<a href="./sols-2021.pdf">problems and solutions</a>)
 (<a href="./sols-2021.tar.gz">src</a>)
 ([git](https://github.com/complex2-liu/macau-olympiad/tree/main/contest-2021/))
